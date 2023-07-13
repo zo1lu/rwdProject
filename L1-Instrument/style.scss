@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+// 黑#000
+// 白#fff
+// 深灰#cdcdce
+// 淺灰#e8e8e9
+// 綠#d7df58
+
+$brandMainColor:#d7df58;
+$neutralDarker:#000;
+$neutralDark:#cdcdce;
+$neutralLight:#e8e8e9;
+$neutralLighter:#fff;
+
+#navbar{
+    width:100vw;
+    background-color: grey;
+}

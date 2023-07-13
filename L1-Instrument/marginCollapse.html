@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Margin Collapse Test</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            .parentContainer{
+                background-color: whitesmoke;
+                width:800px;
+                height:800px;
+            }
+            .childContainer{
+                background-color: blueviolet;
+                
+                margin-top: 40px;
+                margin-bottom: 40px;
+                width:300px;
+                height:300px;
+            }
+            .descendant{
+                background-color: lightgreen;
+                z-index: 1;
+                
+                width:100px;
+                height:100px;
+            }
+            #descendant1{
+                float:left;
+                margin: 20px;
+            }
+            #descendant2{
+                float:left;
+                margin: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parentContainer">
+            <div class="childContainer" id="child1">
+                <div class="descendant" id="descendant1"></div>
+                <div class="descendant" id="descendant2"></div>
+            </div>
+            <div class="childContainer" id="child2"></div>
+            
+        </div>
+    </body>
+</html>
